@@ -1,0 +1,249 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box
+}
+body{
+    /* background-color: rgb(39, 38, 38); */
+    background:url("./assets/vitt-bg2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:90%;
+    margin:0.5rem auto;
+}
+.header .hdfc{
+    width:10rem;
+    height:5rem;
+    object-fit: contain;
+    /* background-color: purple; */
+}
+.header .vitt{
+    width:10rem;
+    height:5rem;
+    object-fit: contain;
+}
+h1{
+    margin: 1rem;
+}
+.App{
+    text-align:center;
+    color:white;
+}
+.player {
+    align-items:center;
+    margin:2rem auto;
+}
+.player h4{
+    font-size: 1.2rem;
+}
+input{
+    padding:1rem 0.8rem;
+    width:50vw;
+    font-size: 1rem;
+    outline:none;
+    border-radius: 0.8rem;
+}
+.fileInputs{
+    width:50vw;
+    height:fit-content;
+    margin:1rem auto;
+    /* border:0.1rem solid red; */
+}
+
+/* label{
+    padding:0.8rem 2.5rem;
+    background-color: rgb(255 136 52);
+    border-radius: 1rem;
+    cursor:pointer;
+    margin:0 1rem;
+    width:15rem;
+} */
+input[type="file"]{
+    display: none;
+}
+.inline {
+    display:flex;
+    width:fit-content;
+    height:fit-content;
+    align-items: center;
+    margin:0rem auto;
+    /* border:0.1rem solid red; */
+}
+
+button:disabled{
+    color:rgb(172, 170, 170);
+    cursor: default;
+}
+
+.progressBar{
+    width:30rem;
+}
+.recording{
+    
+}
+.Btn{
+    
+    width:15rem;
+    height:3.5rem;
+    margin:1rem 1rem;
+    padding:0.8rem 2.5rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    letter-spacing: 0.08rem;
+    /* background-color: rgb(80 31 159); */
+    background-color: rgb(235, 235, 235);
+    outline:none;
+    border:none;
+    color:white;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.green{
+    background-color: rgb(59, 175, 55);
+}
+.purple{
+    background-color: purple;
+}
+.orange {
+    background-color:rgb(255 136 52);
+}
+.downloadBtn{
+    color:white;
+    background-color:#4733ff;
+    
+}
+.disabled{
+    background-color: gray;
+    color:rgb(172, 170, 170);
+    cursor: default;
+}
+.msg-wrapper{
+    width:80vw;
+    height:50vh;
+    background-color: rgb(76, 6, 141);
+    /* background-color: transparent; */
+    margin : 0 auto;
+    margin-bottom: 2rem;
+    overflow-y: scroll; 
+    text-align: left;
+}
+.msg-wrapper::-webkit-scrollbar{
+    display: none;
+  }
+.msg{
+    
+    text-align: left;
+    width: fit-content;
+    max-width:80% ;
+    padding:1rem 1rem;
+    margin:0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    background-color: rgb(147, 64, 224);
+    color:white;
+}
+
+/* table styling*/
+.tableMsg{
+    text-align: center;
+    
+}
+.tableMsg h4{
+    margin-bottom: -1rem;
+}
+table{
+    /* border:0.1rem solid rgb(233, 233, 233); */
+    border-collapse: collapse;
+    margin:1rem auto;
+}
+tr{
+    margin:0.5rem 1rem;
+
+}
+table th,table td{
+    /* border:0.3rem solid rgb(156, 34, 255); */
+    padding:0.2rem 1rem;
+    border:0.1rem solid rgb(233, 233, 233);
+}
+th{
+    background-color: rgb(61, 40, 251)
+}
+td{
+    background-color: rgb(114, 98, 255)
+}
+th p{
+    
+    /* background-color: rgb(255 136 52); */
+    border-radius: 0.2rem;
+    color:white;
+    /* width:10rem; */
+    text-align: center;
+    padding:0.8rem 2rem;
+    letter-spacing: 0.02rem;
+    /* font-weight: normal; */
+}
+td p{
+    /* background-color: rgb(44, 44, 255); */
+    border-radius: 0.2rem;
+    color:white;
+    /* width:5rem; */
+    text-align: center;
+    padding:0.6rem 2rem;
+}
+
+/* popup */
+.popup{
+    position: absolute;
+    left:50%;
+    top:50%;
+    height:10rem;
+    width:30rem;
+    transform: translate(-50%,-50%);
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+
+    background-color: #1568b6;
+    border-radius:0.5rem;
+    /* border:0.2rem solid rgb(255, 80, 11); */
+    /* background-color: white; */
+    background-color: rgb(255, 80, 11);;
+    /* border:0.15rem solid rgb(0, 214, 0); */
+    box-shadow: 3px 3px 49px -33px rgba(0,0,0,0.75);
+}
+
+.popup p{
+    /* color:white; */
+    /* color:rgb(255, 80, 11); */
+    /* color:black; */
+    margin:0 1rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.05rem;
+    text-transform: capitalize;
+    
+}
+.popup button{
+    color:white;
+    width:fit-content;
+    font-size: 1.2rem;
+    padding:0.6rem 3rem; 
+    /* border:0.1rem solid rgb(0, 214, 0); */
+    background-color: rgb(94, 110, 255);
+    outline:none;
+    border:none;
+    border-radius: 0.5rem;
+
+    cursor: pointer;
+}
